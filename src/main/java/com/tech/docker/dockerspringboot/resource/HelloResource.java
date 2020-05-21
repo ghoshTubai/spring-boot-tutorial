@@ -10,6 +10,7 @@ import org.springframework.web.bind.annotation.RestController;
 public class HelloResource {
     @GetMapping
     public String hello(){
+        System.out.println("Received message at hello endpoint");
         return "Welcome to Spring-Boot !!";
     }
     @PostMapping
