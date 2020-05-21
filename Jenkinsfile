@@ -15,10 +15,10 @@ pipeline {
                 }
             }
         }
-        stage ('Deployment Stage'){
+        stage ('Install Stage'){
             steps {
                 withMaven(maven : 'maven_3_6_3'){
-                    sh 'mvn deploy'
+                    sh 'mvn install'
                 }
             }
         }
